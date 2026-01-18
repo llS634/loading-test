@@ -1,0 +1,21 @@
+{
+  "name": "website-loading-perception-test",
+  "version": "1.0.0",
+  "description": "Website Loading Perception Test - Primary Model Load",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8080 -o",
+    "serve": "npx http-server -p 8080"
+  },
+  "keywords": [
+    "perception-test",
+    "loading-test",
+    "user-experience",
+    "web-performance"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

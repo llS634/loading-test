@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Тест загрузки</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://lls634.github.io" crossorigin>
+</head>
+
+<body>
+    <div class="modal show" id="welcomeModal">
+        <div class="modal-content welcome-modal">
+            <h1>Первичная загрузка модели</h1>
+            <div class="task-description">
+                <p>Вы увидите веб-сайт с моделью. Ваша задача — нажать кнопку «модель видна», как только модель появится на экране.</p>
+            </div>
+            <button id="startBtn" class="start-btn">
+                <span class="start-icon">Начать</span>
+            </button>
+        </div>
+    </div>
+
+    <div id="mainContainer" style="display: none;">
+        <iframe 
+            id="modelFrame" 
+            data-src="https://lls634.github.io/Stop-Glow-Gallery/" 
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+        
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="spinner"></div>
+            <p>Загрузка сайта...</p>
+        </div>
+
+        <button id="modelVisibleBtn" class="model-visible-btn" disabled>Модель видна</button>
+    </div>
+
+    <div class="modal" id="surveyModal">
+        <div class="modal-content">
+            <p class="survey-question">Какой по ощущениям была загрузка модели?</p>
+            <div class="survey-options">
+                <button class="survey-btn" data-value="Fast">Быстрой</button>
+                <button class="survey-btn" data-value="Normal">Нормальной</button>
+                <button class="survey-btn" data-value="Slow">Медленной</button>
+            </div>
+            <div class="completion-message" style="display: none;">
+                <p>✓ Спасибо за ваше участие в тесте!</p>
+                <p class="sub-message">Ваши результаты были записаны</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
