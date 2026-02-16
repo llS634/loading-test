@@ -1,11 +1,11 @@
-# Тест восприятия загрузки веб-сайта
+# Website Loading Perception Test
 
-Веб-приложение для проверки восприятия скорости загрузки веб-сайта пользователями. Пользователи нажимают кнопку, когда видят появившуюся модель, а затем оценивают скорость загрузки.
+A web application for testing users' perception of the loading speed of a website. Users click the button when they see the model that appears, and then evaluate the download speed.
 
-## Примечания
+## Notes
 
-- Результаты **НЕ** показываются респондентам (только сообщение о завершении)
-- Все данные регистрируются в консоли браузера (F12) для проверки администратором
-- Результаты сохраняются в localStorage по умолчанию (или отправляются в API, если они настроены)
-- Для базовой функциональности не требуется внешних зависимостей
-- Полностью адаптивный дизайн работает на устройствах любого размера
+- Results **are NOT** shown to respondents (only a completion message)
+- All data is logged in the browser console (F12) for verification by the administrator
+- Results are saved to localStorage by default (or sent to API if they are configured)
+- No external dependencies are required for basic functionality.
+- Fully responsive design works on devices of any size.
